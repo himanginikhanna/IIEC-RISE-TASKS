@@ -1,13 +1,18 @@
 import os
-import pyttsx3
+import pyttsx3 
 
-print("Hello there , I am  Your Personal Desktop Assistant.\n")
-print("I am here to assist you. Which Application You want me to launch for you?")
-print("Here is the List of Applications from your system :")
 
-print(" App Store \n iTunes \n Safari \n Messages \n Facetime \n Mail \n Contacts \n Notes \n Keynote \n Numbers  \n Pages \n Calculator \n Whatsapp \n Terminal \n Siri \n Skype \n Teamviewer \n Pycharm \n Discord \n Visual Studio Code \n Photo Booth \n System Preferences")
-#speak("Hello {}".format(Name))
-print("To Open write Application Name")
+pyttsx3.speak("Hello there , What is Your Name?.\n")
+Name = input("Enter Your Name")
+pyttsx3.speak("Hello {}".format(Name))
+pyttsx3.speak("I am  Your Personal Desktop Assistant. I am here to assist you. Which Application You want me to launch for you?")
+pyttsx3.speak("Here is the List of Applications from your system :")
+
+print("**************APPLICATION MENU***************")
+print(" \t\t App Store \n\t\t iTunes \n\t\t Safari \n\t\t Messages \n\t\t Facetime \n\t\t Mail \n\t\t Contacts \n\t\t Notes \n\t\t Keynote \n\t\t Numbers  \n\t\t Pages \n\t\t Calculator \n\t\t Whatsapp \n\t\t Terminal \n\t\t Siri \n\t\t Skype \n\t\t Teamviewer \n\t\t Pycharm \n\t\t Discord \n\t\t Visual Studio Code \n\t\t Photo Booth \n\t\t System Preferences")
+print("*********************************************")
+
+print("To Launch The Application write Application Name")
 print("To Exit write Quit or Exit.")
 
 while True:
