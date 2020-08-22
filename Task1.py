@@ -82,7 +82,7 @@ while True:
         os.system("open -a Skype")
 
     elif(("Teamviewer" in app_name) or ("teamviewer" in app_name)):
-        pyttsx3.speak("Launching Messages")
+        pyttsx3.speak("Launching Teamviewer")
         os.system("open -a Teamviewer")
 
     elif(("PyCharm" in app_name) or ("pycharm" in app_name)):
@@ -97,9 +97,10 @@ while True:
         pyttsx3.speak("Launching Visual Studio Code")
         os.system("open -a visual\ studio\ code")
 
-    elif(("Photo Booth " in app_name) or ("photo booth " in app_name) or ("photobooth " in app_name) or ("PhotoBooth " in app_name)):
+    elif(("Photo Booth" in app_name) or ("photo booth" in app_name) or 
+    ("photobooth" in app_name) or ("PhotoBooth " in app_name)):
         pyttsx3.speak("Launching Photo Booth")
-        os.system("open -a Photo\ Booth ")
+        os.system("open -a Photo\ Booth")
 
     elif(("System Preferences" in app_name) or ("system preferences" in app_name)):
         pyttsx3.speak("Launching System Preferences")
@@ -109,9 +110,9 @@ while True:
         break
     
     else:
-         print("Application Cannot be Launched \n")
+        pyttsx3.speak("Application Cannot be Launched \n")
 
-print("GOODBYE")
+pyttsx3.speak("GOODBYE")
 
     
 
